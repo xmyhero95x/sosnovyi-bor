@@ -1,0 +1,94 @@
+@import "./fonts.css";
+@import "./header.css";
+@import "./home_section.css";
+@import "./project_section.css";
+@import "./location_section.css";
+@import "./layouts_section.css";
+@import "./gallery_section.css";
+@import "./footer.css";
+:root {
+	--blueColor: #122133;
+	--beigeColor: rgba(214, 166, 122, 0.98);
+	--bgColor: #f9f8f6;
+	--fontCeraPro: Cera Pro
+}
+* {
+	box-sizing: border-box
+}
+html {
+	line-height: 1.15;
+	font-size: 10px;
+	font-family: var(--fontCeraPro)
+}
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-color: var(--bgColor);
+	position: relative;
+	overflow-x: hidden;
+}
+body.lock {
+	overflow: hidden
+}
+h1,
+h2,
+h3,
+h5,
+li,
+p,
+ul {
+	margin: 0;
+	color: var(--blueColor)
+}
+li,
+ul {
+	list-style-type: none;
+	padding: 0
+}
+a {
+	text-decoration: none;
+	color: #000
+}
+img {
+	display: block;
+	width: 100%
+}
+.main {
+	padding-top: 6.4rem
+}
+.line-design-1024,
+.line-design-768 {
+	display: none
+}
+@media screen and (min-width: 768px) {
+	body {
+		width: 768px;
+		position: relative;
+		margin: 0 auto
+	}
+	.line-design-768 {
+		display: block;
+		position: absolute;
+		top: 460px;
+		left: 40px;
+		z-index: 10
+	}
+}
+@media screen and (min-width: 1024px) {
+	body {
+		width: 1024px;
+		position: relative;
+		margin: 0 auto
+	}
+	.line-design-768 {
+		display: none
+	}
+	.line-design-1024 {
+		display: block;
+		position: absolute;
+		top: 490px;
+		left: 35px;
+		z-index: 10
+	}
+}

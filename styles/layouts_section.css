@@ -1,0 +1,154 @@
+.layouts {
+	padding: 25px 0 50px;
+	position: relative
+}
+#layouts {
+	position: absolute;
+	top: -60px
+}
+.birds7,
+.birds8 {
+	display: none
+}
+.layouts-title {
+	font-size: 29px;
+	text-align: center;
+	margin: 0 0 25px
+}
+.layouts-slider {
+	z-index: 15
+}
+.layouts-slides {
+	padding: 0 0 20px
+}
+.layouts-slide {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center
+}
+.layouts-slide__img {
+	width: 245px;
+	height: 164px;
+	margin: 0 0 40px 0
+}
+.layouts-slide__description {
+	background-color: var(--blueColor);
+	width: 245px;
+	position: absolute;
+	bottom: 0
+}
+.layouts-slide__description>p {
+	color: var(--beigeColor);
+	font-size: 16px;
+	font-weight: 800;
+	text-align: center;
+	padding: 7px 0
+}
+.swiper-slide {
+	opacity: .5
+}
+.swiper-slide.swiper-slide-active {
+	opacity: 1
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	display: none
+}
+.swiper-scrollbar,
+.swiper-scrollbar-drag {
+	background: var(--beigeColor);
+	border-radius: 0
+}
+.swiper-horizontal>.swiper-scrollbar {
+	width: 200px;
+	top: 100%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	height: 2px
+}
+.swiper-scrollbar-drag {
+	height: 4px;
+	top: -1px;
+	width: 66px
+}
+@media screen and (min-width: 768px) {
+	.layouts {
+		padding: 60px 0 50px;
+		width: 768px;
+		margin: 0 auto
+	}
+	.birds7,
+	.birds8 {
+		display: block;
+		position: absolute
+	}
+	.birds7 {
+		top: 30px;
+		left: 54px
+	}
+	.birds7>img {
+		width: 68px;
+		height: auto
+	}
+	.birds8 {
+		bottom: 50px;
+		right: 0
+	}
+	.birds8>img {
+		width: 87px
+	}
+	.layouts-title {
+		font-size: 33px
+	}
+	.layouts-slides {
+		padding: 0 0 20px
+	}
+}
+@media screen and (min-width: 1024px) {
+	.layouts {
+		padding: 100px 10px 30px 0;
+		position: relative;
+		width: 1024px;
+		margin: 0 auto
+	}
+	.birds7 {
+		top: 80px;
+		left: 90px
+	}
+	.birds7>img {
+		width: 68px;
+		height: auto
+	}
+	.birds8 {
+		top: 120px;
+		right: 200px
+	}
+	.birds8>img {
+		width: 87px
+	}
+	.layouts-title {
+		font-size: 33px
+	}
+	.layouts-slider {
+		padding: 0 0 0 40px;
+		width: 102%
+	}
+	.layouts-slides {
+		padding: 0 0 20px
+	}
+	.swiper-button-prev::after,
+	.swiper-button-next::after {
+		display: block;
+		margin-top: 0;
+		color: black
+	}
+}
